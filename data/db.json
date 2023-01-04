@@ -317,7 +317,7 @@
         {
             "program":"linux",
             "description":"linux packages manager",
-            "example":"",
+            "example":"sudo apt-get",
             "prompt":"apt-get",
             "parameters":[
                 {
@@ -392,7 +392,7 @@
         {
             "program":"linux",
             "description":"files: create file",
-            "example":"",
+            "example":"echo <file_data> > <file_name>",
             "prompt":"echo .>",
             "parameters":[],
             "flags":[]

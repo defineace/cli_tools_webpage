@@ -1,54 +1,55 @@
+const captializeLetter = (str) =>{
+    return str[0].toUpperCase() + str.slice(1).toLowerCase();
+};
+
+const Code = ({attribute,query,styleName}) => {
+    return(
+        attribute.map((i) => (
+            <div className={styleName}>
+                <p>{i.description}</p>
+                <label>{captializeLetter(query)}</label>
+                <code>{i[query]}</code>
+                <label>Example</label>
+                <code>{i.example}</code>
+            </div>
+        ))
+    );
+};
+
+
 const CommandList = ({cli}) => {
     return(
-        <div className="cli-list">
-            {cli.map((command) => (
-
+        cli.map((command, index) => (
+            
+            <div className="command-list" id={'div-'+index}>
                 <div className="command" key={command.id}>
-                    <div>
-                        <h2>Program</h2>
-                        <div>{command.program}</div>
+                    <div className="title">
+                        <h1>{command.program}</h1>
                     </div>
+
                     <div>
                         <h2>Prompt</h2>
-                        <div className="command-prompt">
-                            
-                            <p>{command.description}</p>
-                            <label>Prompt</label>
-                            <code>{command.prompt}</code>
-                            <label>Example</label>
-                            <code>{command.example}</code>
-                        </div>
+                        <Code
+                            attribute={[{description:command.description,prompt:command.prompt,example:command.example}]}
+                            query="prompt"
+                            styleName="prompt"
+                        />
                     </div>
-                    <div className="command-attributes">
-                        <div className="parameters">
+
+                    <div className="attributes">
+                        <div>
                             <h2>Parameters</h2>
-                            {command.parameters.map((parameter) => (
-                                <div className="parameter">
-                                    <p>{parameter.description}</p>
-                                    <label>Parameter</label>
-                                    <code>{parameter.parameter}</code>
-                                    <label>Example</label>
-                                    <code>{parameter.example}</code>
-                                </div>
-                            ))}
+                            <Code attribute={command.parameters} query="parameter" styleName="attribute"/>
                         </div>
                             
-                        <div className="flags">
+                        <div>
                             <h2>Flags</h2>
-                            {command.flags.map((flag) => (
-                                <div className="flag">
-                                    <p>{flag.description}</p>
-                                    <label>Flag</label>
-                                    <code>{flag.flag}</code>
-                                    <label>Example</label>
-                                    <code>{flag.example}</code>
-                                </div>
-                            ))}
+                            <Code attribute={command.flags} query="flag" styleName="attribute"/>
                         </div>
                     </div>
                 </div>
-            ))}
-        </div>
+            </div>
+        ))
     );
 }
 
