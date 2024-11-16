@@ -27,7 +27,6 @@
             "Prompt":"mingw-make",
             "Propmt Description":"mingw-make: read compile make file for mingw compiler",
             "Propmt Example":"mingw-make <cpp_file>",
-            
             "Prompt Parameters":[],
             "Prompt Flags":[
                 {

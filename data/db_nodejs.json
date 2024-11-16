@@ -8,7 +8,7 @@
                 {
                     "Parameter":"init",
                     "Parameter Description":"Initates package.json in local directory",
-                    "Prompt Example":"npm init"
+                    "Parameter Example":"npm init"
                 },
                 {
                     "Parameter":"install",
