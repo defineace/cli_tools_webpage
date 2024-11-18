@@ -2,138 +2,138 @@
     "windows":[
         {
             "Prompt":"ipconfig",
-            "Prompt Description":"Computer Network configuration",
-            "Prompt Example":"ipconfig",
-            "Prompt Parameters":[
+            "Prompt_Description":"Computer Network configuration",
+            "Prompt_Example":"ipconfig",
+            "Prompt_Parameters":[
                 {
                     "Parameter":"/all",
-                    "Parameter Description":"Network: Display full TCP/IP configuration for all adapters",
-                    "Parameter Example":"ipconfig /all"
+                    "Parameter_Description":"Network: Display full TCP/IP configuration for all adapters",
+                    "Parameter_Example":"ipconfig /all"
                 },
                 {
                     "Parameter": "/renew Local Area Connection",
-                    "Parameter Description": "Network: Renew a DHCP-assigned ip address configuration for only the lan adapter",
-                    "Parameter Example":"ipconfig /renew loca area connection"
+                    "Parameter_Description": "Network: Renew a DHCP-assigned ip address configuration for only the lan adapter",
+                    "Parameter_Example":"ipconfig /renew loca area connection"
                 },
                 {
                     "Parameter": "/flushdns",
-                    "Parameter Description": "Network: Clear DNS cache",
-                    "Parameter Example":"ipconfig /flushdns"
+                    "Parameter_Description": "Network: Clear DNS cache",
+                    "Parameter_Example":"ipconfig /flushdns"
                 }
             ],
-            "Prompt Flags":[]
+            "Prompt_Flags":[]
         },
         {
             "Prompt":"ping",
-            "Prompt Description":"Network: ping targeted ip address",
-            "Prompt Example":"ping",
-            "Prompt Parameters":[
+            "Prompt_Description":"Network: ping targeted ip address",
+            "Prompt_Example":"ping",
+            "Prompt_Parameters":[
                 {
                     "Parameter":"/t",
-                    "Parameter Description":"Specifies ping continue sending echo Request messages to the destination until interrupted. To interrupt and display statistics, press CTRL+ENTER. To interrupt and quit this command, press CTRL+C.",
-                    "Parameter Example":"ping /t"
+                    "Parameter_Description":"Specifies ping continue sending echo Request messages to the destination until interrupted. To interrupt and display statistics, press CTRL+ENTER. To interrupt and quit this command, press CTRL+C.",
+                    "Parameter_Example":"ping /t"
                 },
                 {
                     "Parameter":"/a",
-                    "Parameter Description":"Specifies reverse name resolution be performed on the destination IP address. If this operation is successful, ping displays the corresponding host name.",
-                    "Parameter Example":"ping /a"
+                    "Parameter_Description":"Specifies reverse name resolution be performed on the destination IP address. If this operation is successful, ping displays the corresponding host name.",
+                    "Parameter_Example":"ping /a"
                 },
                 {
                     "Parameter":"/n",
-                    "Parameter Description":"Specifies the number of echo Request messages be sent. The default is 4.",
-                    "Parameter Example":"ping /n 2 google.com"
+                    "Parameter_Description":"Specifies the number of echo Request messages be sent. The default is 4.",
+                    "Parameter_Example":"ping /n 2 google.com"
                 }
             ],
-            "Prompt Flags":[]
+            "Prompt_Flags":[]
         },
         {
             "Prompt":"tracert",
-            "Prompt Description":"Trace network route to targeted ip address",
-            "Prompt Example":"tracert google.com",
-            "Prompt Parameters":[
+            "Prompt_Description":"Trace network route to targeted ip address",
+            "Prompt_Example":"tracert google.com",
+            "Prompt_Parameters":[
                 {
                     "Parameter":"/d",
-                    "Parameter Description":"Stops attempts to resolve the IP addresses of intermediate routers to their names. This can speed up the return of results.",
-                    "Parameter Example":"tracert /d google.com"
+                    "Parameter_Description":"Stops attempts to resolve the IP addresses of intermediate routers to their names. This can speed up the return of results.",
+                    "Parameter_Example":"tracert /d google.com"
                 },
                 {
                     "Parameter":"/h",
-                    "Parameter Description":"Specifies the maximum number of hops in the path to search for the target (destination). The default is 30 hops.",
-                    "Parameter Example":"tracert /h google.com"
+                    "Parameter_Description":"Specifies the maximum number of hops in the path to search for the target (destination). The default is 30 hops.",
+                    "Parameter_Example":"tracert /h google.com"
                 },
                 {
                     "Parameter":"/R",
-                    "Parameter Description":"Specifies that the IPv6 Routing extension header be used to send an echo Request message to the local host, using the destination as an intermediate destination and testing the reverse route.",
-                    "Parameter Example":"tracert /R google.com"
+                    "Parameter_Description":"Specifies that the IPv6 Routing extension header be used to send an echo Request message to the local host, using the destination as an intermediate destination and testing the reverse route.",
+                    "Parameter_Example":"tracert /R google.com"
                 }
             ],
-            "Prompt Flags":[]
+            "Prompt_Flags":[]
         },
         {
             "Prompt":"netsh interface ip delete destinationcache",
-            "Prompt Description":"Flush routing table",
-            "Prompt Example":"netsh interface ip delete destinationcache",
-            "Prompt Parameters":[],
-            "Prompt Flags":[]
+            "Prompt_Description":"Flush routing table",
+            "Prompt_Example":"netsh interface ip delete destinationcache",
+            "Prompt_Parameters":[],
+            "Prompt_Flags":[]
         },
         {
             "Prompt":"cd",
-            "Prompt Description":"Change directory",
-            "Prompt Example":"cd /",
-            "Prompt Parameters":[
+            "Prompt_Description":"Change directory",
+            "Prompt_Example":"cd /",
+            "Prompt_Parameters":[
                 {
                     "Parameter":"/d",
-                    "Parameter Description":"Changes the current drive as well as the current directory for a drive.",
-                    "Parameter Example":"cd /d"
+                    "Parameter_Description":"Changes the current drive as well as the current directory for a drive.",
+                    "Parameter_Example":"cd /d"
                 }
             ],
-            "Prompt Flags":[]
+            "Prompt_Flags":[]
         },
         {
             "Prompt":"dir",
-            "Prompt Description":"List directory contents",
-            "Prompt Example":"dir",
-            "Prompt Parameters":[
+            "Prompt_Description":"List directory contents",
+            "Prompt_Example":"dir",
+            "Prompt_Parameters":[
                 {
                     "Parameter":"/q",
                     "Parameter Desription":"Displays file ownership information.",
-                    "Parameter Example":"dir /q"
+                    "Parameter_Example":"dir /q"
                 },
                 {
                     "Parameter":"/w",
                     "Parameter Desription":"Displays the listing in wide format, with as many as five file names or directory names on each line.",
-                    "Parameter Example":"dir /w"
+                    "Parameter_Example":"dir /w"
                 }
             ],
-            "Prompt Flags":[]
+            "Prompt_Flags":[]
         },
         {
             "Prompt":"mkdir",
-            "Prompt Description":"Create directory",
-            "Prompt Example":"mkdir directoryName",
-            "Prompt Parameters":[],
-            "Prompt Flags":[]
+            "Prompt_Description":"Create directory",
+            "Prompt_Example":"mkdir directoryName",
+            "Prompt_Parameters":[],
+            "Prompt_Flags":[]
         },
         {
             "Prompt":"rmdir",
-            "Prompt Description":"Delete directory",
-            "Prompt Example":"rmdir directoryName",
-            "Prompt Parameters":[],
+            "Prompt_Description":"Delete directory",
+            "Prompt_Example":"rmdir directoryName",
+            "Prompt_Parameters":[],
             "Propmt Flags":[]
         },
         {
             "Prompt":"del",
-            "Prompt Description":"Delete file",
-            "Prompt Example":"del fileName",
-            "Prompt Parameters":[],
-            "Prompt Flags":[]
+            "Prompt_Description":"Delete file",
+            "Prompt_Example":"del fileName",
+            "Prompt_Parameters":[],
+            "Prompt_Flags":[]
         },
         {
             "Prompt":"echo",
-            "Prompt Description":"Create file or echo input",
-            "Prompt Example":"echo <file data> > <file_name>",
-            "Prompt Parameters":[],
-            "Prompt Flags":[]
+            "Prompt_Description":"Create file or echo input",
+            "Prompt_Example":"echo <file data> > <file_name>",
+            "Prompt_Parameters":[],
+            "Prompt_Flags":[]
         }
     ]
 }
